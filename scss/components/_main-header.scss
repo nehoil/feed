@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #e6e6e6;
+    &.el-menu {
+        border-bottom: none;
+    }
+    // img.logo {
+    //     width: 280px;
+    // }
+}

@@ -1,0 +1,54 @@
+.card-cat {
+
+    // background-image: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
+    background-color: $clr2;
+
+    @include for-mobile-layout {
+        @include aspect-ratio(100, 100);
+    }
+
+    @include for-narrow-layout {
+        &:nth-child(3n + 0) {
+            background-image: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
+            @include aspect-ratio(100, 100);
+        }
+        &:nth-child(3n + 1) {
+            background-image: linear-gradient(to left bottom, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
+            @include aspect-ratio(200, 100);
+            grid-column: span 2;
+        }
+        &:nth-child(3n + 2) {
+            background-image: linear-gradient(to left top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
+            @include aspect-ratio(100, 200);
+            grid-row: span 2;
+        }
+    }
+
+    // &::after {
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     left: 0;
+    //     // background-color: green;
+    //     background-image: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
+    //     opacity: 0.6;
+    // }
+
+    
+    .cat-image {
+        mix-blend-mode: soft-light;
+    }
+
+    .cat-tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        font-family: GreatVibes;
+        font-size: rem(76px);
+        color: $clr5;
+    }
+}

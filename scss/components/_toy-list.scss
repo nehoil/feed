@@ -1,0 +1,33 @@
+.toy-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+table {
+    width: 800px;
+    border: 1px solid rgba(128, 128, 128, 0.267);
+    border-radius: 5px;
+    border-collapse: collapse;
+  }
+  
+  td {
+    text-align: start;
+  }
+  
+  tr {
+    height: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.185);
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  tr:nth-child(even):not(:first-child) {
+    background-color: rgba(112, 112, 112, 0.144);
+  }
+  
